@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class player : MonoBehaviour
 {
     private float horizontal;
     private float speed = 8f;
@@ -12,6 +12,19 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] float startingHealth = 100f;
+    
+    private float Health {get; set;}
+
+    void Awake()
+    {
+        
+    }
+
+    void Start()
+    {
+
+    }
 
     void Update()
     {
